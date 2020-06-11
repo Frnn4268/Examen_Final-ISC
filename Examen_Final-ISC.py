@@ -33,3 +33,7 @@ class Desk:
         Label(frame, text = 'Mes: ').grid(row = 4, column = 0)
         self.pes4 = Entry(frame)
         self.pes4.grid(row = 4, columnspan = 6)
+        #Año
+        Label(frame, text = 'Año: ').grid(row = 5, column = 0)
+        self.pap5 = Entry(frame)
+        self.pap5.grid(row = 5, columnspan = 6)
