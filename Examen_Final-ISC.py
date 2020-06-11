@@ -29,3 +29,7 @@ class Desk:
         Label(frame, text = 'Día: ').grid(row = 3, column = 0)
         self.pp3 = Entry(frame)
         self.pp3.grid(row = 3, columnspan = 6)
+        #Mes
+        Label(frame, text = 'Mes: ').grid(row = 4, column = 0)
+        self.pes4 = Entry(frame)
+        self.pes4.grid(row = 4, columnspan = 6)
