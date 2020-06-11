@@ -97,3 +97,18 @@ class Desk:
         cudd=len(apd)
         consonante=cud+cudd-cuenta
         self.message['text'] = 'Tu nombre y apellido tienen {} vocales y {} consonantes'.format(cuenta,consonante)
+        #5.Nombre y apellido al reves
+    def funcion5(self):
+        ns=str(self.p1.get())
+        ad=str(self.op2.get())
+        cadena_invertida = ""
+        cadena_invertida1= ""
+        for letra in ns:
+            cadena_invertida = letra + cadena_invertida
+        for letra1 in ad:
+            cadena_invertida1 = letra1 + cadena_invertida1
+        self.message['text'] = '{} {}, al reves es: {} {}'.format(ns,ad,cadena_invertida,cadena_invertida1)
+if __name__ == '__main__':
+    window = Tk()
+    app = Desk(window)
+    window.mainloop()
