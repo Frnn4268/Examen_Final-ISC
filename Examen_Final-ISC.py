@@ -25,3 +25,7 @@ class Desk:
         Label(frame, text = 'Apellido: ').grid(row = 2, column = 0)
         self.op2 = Entry(frame)
         self.op2.grid(row = 2, columnspan = 6)
+        #Dia
+        Label(frame, text = 'Día: ').grid(row = 3, column = 0)
+        self.pp3 = Entry(frame)
+        self.pp3.grid(row = 3, columnspan = 6)
