@@ -47,7 +47,7 @@ class Desk:
         self.message = Label(text = '', fg = 'Black')
         self.message.grid(row = 3, column = 1, columnspan = 2, sticky = W + E)
 
-#1. Letras a numeros Hexadecimales
+    #1. Letras a numeros Hexadecimales
     def funcion1(self):
         dia=int(self.pp3.get())
         mes=int(self.pes4.get())
@@ -55,4 +55,17 @@ class Desk:
         hexdia=format(dia, '0x')
         hexmes=format(mes, '0x')
         hexanio=format(anio, '0x')
-        self.message['text'] = 'Su fecha de nacimiento: {}/{}/{}, en Hexadecimal es: {}/{}/{}'.format(dia,mes,anio,hexdia,hexmes,hexanio)       
+        self.message['text'] = 'Su fecha de nacimiento: {}/{}/{}, en Hexadecimal es: {}/{}/{}'.format(dia,mes,anio,hexdia,hexmes,hexanio)
+
+    #2. Horas vividas
+    def funcion2(self):   
+        dia=int(self.pp3.get())
+        mes=int(self.pes4.get())
+        anio=int(self.pap5.get())
+        fecha_de_nacimiento = datetime.datetime(anio, mes, dia)
+        fecha_de_hoy = datetime.datetime.now()
+        dias_vividos = fecha_de_hoy - fecha_de_nacimiento
+        horas = dias_vividos * 24
+        horas_vividas = horas.days
+        self.message['text'] = 'Naciste el: {}/{}/{}, en total has vivido {} horas'.format(dia,mes,anio,horas_vividas)   
+       
