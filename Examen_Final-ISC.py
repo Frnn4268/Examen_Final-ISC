@@ -13,3 +13,6 @@ class Desk:
         #Titulo del programa
         self.wind.columnconfigure(0, weight=1)
         self.wind.title('Examen Final')
+        #Titulo de entrada
+        frame = LabelFrame(self.wind, text = 'BIENVENIDO')
+        frame.grid(row = 0, column = 2, columnspan = 20, pady = 20)
