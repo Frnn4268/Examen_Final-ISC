@@ -21,3 +21,7 @@ class Desk:
         self.p1 = Entry(frame)
         self.p1.focus()
         self.p1.grid(row = 1, columnspan = 6)
+        #Apellido
+        Label(frame, text = 'Apellido: ').grid(row = 2, column = 0)
+        self.op2 = Entry(frame)
+        self.op2.grid(row = 2, columnspan = 6)
